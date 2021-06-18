@@ -1,12 +1,15 @@
 import React from 'react';
-import { Text } from 'react-native';
+
+import { Visor } from '~/components/Visor';
+import { Body } from '~/components/Body';
 
 import { Container } from './styles';
 
 const MainScreen: React.FC = () => {
   return (
     <Container>
-      <Text>Hello you are in the main screen!</Text>
+      <Visor />
+      <Body />
     </Container>
   );
 };

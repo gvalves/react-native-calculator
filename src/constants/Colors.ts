@@ -1,6 +1,5 @@
-const primary = '#333';
-const secondary = '#666';
-const tertiary = '#999';
-const quaternary = '#ccc';
-const black = '#000';
-const white = '#fff';
+const primary = '#2a70f1';
+const black = '#101622';
+const white = '#eeeff1';
+
+export { primary, black, white };

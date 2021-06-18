@@ -1,21 +1,18 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 
-import { Layout } from '~/components/Layout';
 import { MainScreen } from '~/screens/MainScreen';
-
-const Stack = createStackNavigator();
+import { black } from '~/constants/Colors';
 
 const App: React.FC = () => {
   return (
-    <NavigationContainer>
-      <Layout>
-        <Stack.Navigator>
-          <Stack.Screen name="Main" component={MainScreen} />
-        </Stack.Navigator>
-      </Layout>
-    </NavigationContainer>
+    <>
+      <StatusBar backgroundColor={black} barStyle="light-content" />
+      <NavigationContainer>
+        <MainScreen />
+      </NavigationContainer>
+    </>
   );
 };
 
