@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { Visor } from '~/components/Visor';
-import { Body } from '~/components/Body';
+import { CalcHead } from '~/components/CalcHead';
+import { CalcBody } from '~/components/CalcBody';
 
 import { Container } from './styles';
 
 const MainScreen: React.FC = () => {
   return (
     <Container>
-      <Visor />
-      <Body />
+      <CalcHead />
+      <CalcBody />
     </Container>
   );
 };
